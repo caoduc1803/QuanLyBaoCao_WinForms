@@ -1,6 +1,6 @@
 ﻿namespace Baocaocuoiky
 {
-    partial class Form1
+    partial class FormGhiNhanSuCo
     {
         /// <summary>
         ///  Required designer variable.

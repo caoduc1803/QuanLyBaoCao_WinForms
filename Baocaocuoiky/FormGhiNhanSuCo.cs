@@ -1,8 +1,8 @@
 namespace Baocaocuoiky
 {
-    public partial class Form1 : Form
+    public partial class FormGhiNhanSuCo : Form
     {
-        public Form1()
+        public FormGhiNhanSuCo()
         {
             InitializeComponent();
         }
