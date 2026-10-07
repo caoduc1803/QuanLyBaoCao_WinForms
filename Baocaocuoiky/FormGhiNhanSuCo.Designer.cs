@@ -35,22 +35,25 @@
             pnlLeft = new Panel();
             tblLeft = new TableLayoutPanel();
             panel1 = new Panel();
-            label3 = new Label();
-            iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             pnlLeftHeader = new Panel();
             label2 = new Label();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             pnlRight = new Panel();
             iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
+            panel2 = new Panel();
+            iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            label3 = new Label();
+            tblSearch = new TableLayoutPanel();
             pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             tblMain.SuspendLayout();
             pnlLeft.SuspendLayout();
             tblLeft.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             pnlLeftHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pnlTitle
@@ -139,42 +142,16 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(187, 213, 242);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(iconPictureBox3);
+            panel1.BackColor = Color.White;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(tblSearch);
+            panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(14, 14);
             panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(761, 172);
             panel1.TabIndex = 0;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(238, 245, 252);
-            label3.Dock = DockStyle.Fill;
-            label3.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label3.Location = new Point(48, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(197, 30);
-            label3.TabIndex = 0;
-            label3.Text = "TÌM KIẾM VÀ LỌC";
-            // 
-            // iconPictureBox3
-            // 
-            iconPictureBox3.BackColor = Color.FromArgb(187, 213, 242);
-            iconPictureBox3.Dock = DockStyle.Left;
-            iconPictureBox3.ForeColor = Color.FromArgb(21, 62, 117);
-            iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Search;
-            iconPictureBox3.IconColor = Color.FromArgb(21, 62, 117);
-            iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox3.IconSize = 48;
-            iconPictureBox3.Location = new Point(0, 0);
-            iconPictureBox3.Name = "iconPictureBox3";
-            iconPictureBox3.Size = new Size(48, 172);
-            iconPictureBox3.TabIndex = 1;
-            iconPictureBox3.TabStop = false;
             // 
             // pnlLeftHeader
             // 
@@ -237,6 +214,59 @@
             iconSplitButton1.Size = new Size(23, 23);
             iconSplitButton1.Text = "iconSplitButton1";
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(238, 245, 252);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(iconPictureBox3);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(759, 36);
+            panel2.TabIndex = 0;
+            // 
+            // iconPictureBox3
+            // 
+            iconPictureBox3.BackColor = Color.Transparent;
+            iconPictureBox3.Dock = DockStyle.Left;
+            iconPictureBox3.ForeColor = Color.FromArgb(21, 62, 117);
+            iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Search;
+            iconPictureBox3.IconColor = Color.FromArgb(21, 62, 117);
+            iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox3.IconSize = 36;
+            iconPictureBox3.Location = new Point(0, 0);
+            iconPictureBox3.Name = "iconPictureBox3";
+            iconPictureBox3.Size = new Size(48, 36);
+            iconPictureBox3.TabIndex = 0;
+            iconPictureBox3.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Dock = DockStyle.Fill;
+            label3.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label3.ForeColor = Color.FromArgb(21, 62, 117);
+            label3.Location = new Point(48, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(197, 30);
+            label3.TabIndex = 1;
+            label3.Text = "TÌM KIẾM VÀ LỌC";
+            label3.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // tblSearch
+            // 
+            tblSearch.ColumnCount = 2;
+            tblSearch.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tblSearch.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tblSearch.Dock = DockStyle.Fill;
+            tblSearch.Location = new Point(0, 36);
+            tblSearch.Name = "tblSearch";
+            tblSearch.RowCount = 2;
+            tblSearch.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tblSearch.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tblSearch.Size = new Size(759, 134);
+            tblSearch.TabIndex = 1;
+            // 
             // FormGhiNhanSuCo
             // 
             AutoScaleDimensions = new SizeF(144F, 144F);
@@ -256,11 +286,12 @@
             pnlLeft.ResumeLayout(false);
             tblLeft.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             pnlLeftHeader.ResumeLayout(false);
             pnlLeftHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -277,8 +308,10 @@
         private TableLayoutPanel tblLeft;
         private Label label2;
         private Panel panel1;
+        private FontAwesome.Sharp.IconSplitButton iconSplitButton1;
+        private Panel panel2;
         private Label label3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private FontAwesome.Sharp.IconSplitButton iconSplitButton1;
+        private TableLayoutPanel tblSearch;
     }
 }
